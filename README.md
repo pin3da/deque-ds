@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/pin3da/deque-ds.svg?branch=master)](https://travis-ci.org/pin3da/deque-ds)
+
 # deque-ds
 deque implementation in javascript
 
