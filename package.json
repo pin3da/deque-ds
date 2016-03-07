@@ -1,6 +1,6 @@
 {
   "name": "deque-ds",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "deque datastructure ",
   "main": "index.js",
   "scripts": {
