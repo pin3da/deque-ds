@@ -2,31 +2,31 @@ module.exports = Deque;
 
 function Deque() {
   if (!(this instanceof Deque)) return new Deque();
-  this.data = {};
-  this.back = 0;
-  this.front = 0;
+  this._data = {};
+  this._back = 0;
+  this._front = 0;
 }
 
 Deque.prototype.push_back = function(value) {
-  this.data[this.back++] = value;
+  this._data[this._back++] = value;
 }
 
 Deque.prototype.push_front = function(value) {
-  this.front--;
-  this.data[this.front] = value;
+  this._front--;
+  this._data[this._front] = value;
 }
 
 Deque.prototype.front = function() {
-  if (this.front < this.back)
-    return this.data[this.front];
+  if (this._front < this._back)
+    return this._data[this._front];
   return null;
 }
 
 Deque.prototype.pop_front= function() {
-  if (this.front < this.back) {
-    val = this.data[this.front];
-    delete this.data[this.front];
-    this.front++;
+  if (this._front < this._back) {
+    val = this._data[this._front];
+    delete this._data[this._front];
+    this._front++;
     return val;
   }
   return null;
@@ -34,27 +34,27 @@ Deque.prototype.pop_front= function() {
 
 
 Deque.prototype.back = function() {
-  if (this.front < this.back)
-    return this.data[this.back - 1];
+  if (this._front < this._back)
+    return this._data[this._back - 1];
   return null;
 }
 
 Deque.prototype.pop_back = function() {
-  if (this.front < this.back) {
-    val = this.data[this.back - 1];
-    delete this.data[this.back - 1];
-    this.back--;
+  if (this._front < this._back) {
+    val = this._data[this._back - 1];
+    delete this._data[this._back - 1];
+    this._back--;
     return val;
   }
   return null;
 }
 
 Deque.prototype.at = function(index) {
-  if (index > this.back - this.front)
+  if (index > this._back - this._front)
     return null;
-  return this.data[this.front + index];
+  return this._data[this._front + index];
 }
 
 Deque.prototype.size = function() {
-  return this.back - this.front;
+  return this._back - this._front;
 }
