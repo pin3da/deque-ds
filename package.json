@@ -1,0 +1,26 @@
+{
+  "name": "deque-ds",
+  "version": "1.0.0",
+  "description": "deque datastructure ",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap --cov test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pin3da/deque-ds.git"
+  },
+  "keywords": [
+    "deque",
+    "datastructure"
+  ],
+  "author": "Manuel Pineda <manuel.felipe.pineda@gmail.com> (http://github.com/pin3da)",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/pin3da/deque-ds/issues"
+  },
+  "homepage": "https://github.com/pin3da/deque-ds#readme",
+  "devDependencies": {
+    "tap": "^5.7.0"
+  }
+}
