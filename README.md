@@ -30,14 +30,14 @@ console.log(deque.size());
 
 ## API
 
-pushBack(value)
-pushFront(value)
-
-front()         // get front element
-popFront()      // get and remove front element
-
-back();         // get last element
-popBack();      // get and remove last element
-
-at(index);      // get element at specific location
-size();
+    pushBack(value)
+    pushFront(value)
+    
+    front()         // get front element
+    popFront()      // get and remove front element
+    
+    back();         // get last element
+    popBack();      // get and remove last element
+    
+    at(index);      // get element at specific location
+    size();
