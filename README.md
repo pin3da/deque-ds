@@ -9,12 +9,12 @@ deque implementation in javascript
 var deque = require('deque-ds')();
 
 for (var i = 0; i < 20; ++i)
-  deque.push_back(i);
+  deque.pushBack(i);
 
-console.log(deque.pop_front());
-console.log(deque.pop_back());
+console.log(deque.popFront());
+console.log(deque.popBack());
 
-deque.push_front(100);
+deque.pushFront(100);
 
 console.log(deque.size());
 ```
@@ -26,3 +26,18 @@ console.log(deque.size());
 ## Test
 
     npm run test
+
+
+## API
+
+pushBack(value)
+pushFront(value)
+
+front()         // get front element
+popFront()      // get and remove front element
+
+back();         // get last element
+popBack();      // get and remove last element
+
+at(index);      // get element at specific location
+size();
